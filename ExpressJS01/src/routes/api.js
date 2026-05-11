@@ -24,6 +24,6 @@ routerAPI.post("/forgot-password", forgotPassword);
 routerAPI.post("/reset-password", resetPassword);
 
 routerAPI.get("/user", getUser);
-routerAPI.get("/account", delay, getAccount);
+routerAPI.get("/account", auth, getAccount);
 
 module.exports = routerAPI; //export default
